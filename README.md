@@ -17,4 +17,6 @@ Default BASE_URL is set to 'http://localhost:3000'.
 But I have not implemented yet automatic deletion :(
 I don't so familiar with Sidekiq.
 
+And I didn't have time to implement the styles.
+
 
