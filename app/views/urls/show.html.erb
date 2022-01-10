@@ -1,0 +1,11 @@
+<ul>
+  <li>Short URL: <%= link_to "#{Url::BASE_URL}#{@url.short_url}", "#{Url::BASE_URL}#{@url.short_url}" %></li>
+  <li>Original URL: <%= link_to @url.original_url, @url.original_url %></li>
+  <li>Visited: <%= @url.visited %> times</li>
+  <li>
+    <time datetime="<%= @url.formatted_date %>">Created:
+      <%= @url.formatted_date %>
+    </time>
+  </li>
+</ul>
+<hr>

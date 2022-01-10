@@ -1,0 +1,13 @@
+<h2>Create short URL</h2>
+
+<%= form_with model: @url, url: urls_path do |form| %>
+  <div>
+    <%= form.label :original_url, "Source URL" %>
+    <%= form.text_field :original_url, required: true, minlength: 12 %>
+  </div>
+  <div>
+    <%= form.label :custom_url, "Custom short URL (optional)" %>
+    <%= form.text_field :custom_url, minlength: 2 %>
+  </div>
+  <%= form.submit "Save" %>
+<% end %>
